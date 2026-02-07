@@ -1,0 +1,1 @@
+{\n  \"name\": \"nextjs-ai-chatbot\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"react\": \"^17.0.2\",\n    \"next\": \"^12.0.7\",\n    \"axios\": \"^0.21.1\",\n    \"dotenv\": \"^10.0.0\"\n  }\n}
