@@ -1,18 +1,19 @@
-// This is the main layout component for the application
-import { ReactNode } from 'react';
+import type { Metadata } from "next";
+import "./globals.css";
 
-const Layout = ({ children }: { children: ReactNode }) => {
-    return (
-        <div>
-            <header>
-                <h1>My Chatbot Application</h1>
-            </header>
-            <main>{children}</main>
-            <footer>
-                <p>© 2026 My Chatbot Application</p>
-            </footer>
-        </div>
-    );
+export const metadata: Metadata = {
+  title: "GameDev AI Chatbot",
+  description: "AI-powered assistant für Game Development",
 };
 
-export default Layout;
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="de">
+      <body className="bg-gray-900 text-white">{children}</body>
+    </html>
+  );
+}
